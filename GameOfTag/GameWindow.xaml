@@ -1,0 +1,63 @@
+﻿<Window x:Class="GameOfTag.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameOfTag"
+        mc:Ignorable="d"
+        Title="Пятнашки" Height="450" Width="400" WindowStartupLocation="CenterScreen">
+
+    <DockPanel LastChildFill="True">
+        <Grid DockPanel.Dock="Top"
+              Height="30"
+              Background="Gray">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" 
+                    Content="Новая игра"
+                    FontFamily="Bahnschrift SemiBold"
+                    Background="#B7D9B1"
+                    Margin="2"
+                    Click="NewGame_Button"/>
+            <Button Grid.Column="1"
+                    Content="Выход"
+                    FontFamily="Bahnschrift SemiBold"
+                    Foreground="White"
+                    Background="#FFDF0F0F"
+                    Margin="2"
+                    Click="Button_Exit"/>
+        </Grid>
+        <Grid x:Name="grid">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Button x:Name="button0" Grid.Row="0" Grid.Column="0" Content="Button" FontSize="50" Background="LightGray" Margin="4" Tag="0" Click="Button_Click" />
+            <Button x:Name="button1" Grid.Row="0" Grid.Column="1" Content="Button" FontSize="50" Background="LightGray" Margin="4" Tag="1" Click="Button_Click" />
+            <Button x:Name="button2" Grid.Row="0" Grid.Column="2" Content="Button" FontSize="50" Background="LightGray" Margin="4" Tag="2" Click="Button_Click" />
+            <Button x:Name="button3" Grid.Row="0" Grid.Column="3" Content="Button" FontSize="50" Background="LightGray" Margin="4" Tag="3" Click="Button_Click" />
+            <Button x:Name="button4" Grid.Row="1" Grid.Column="0" Content="Button" FontSize="50" Background="LightGray" Margin="4" Tag="4" Click="Button_Click" />
+            <Button x:Name="button5" Grid.Row="1" Grid.Column="1" Content="Button" FontSize="50" Background="LightGray" Margin="4" Tag="5" Click="Button_Click" />
+            <Button x:Name="button6" Grid.Row="1" Grid.Column="2" Content="Button" FontSize="50" Background="LightGray" Margin="4" Tag="6" Click="Button_Click" />
+            <Button x:Name="button7" Grid.Row="1" Grid.Column="3" Content="Button" FontSize="50" Background="LightGray" Margin="4" Tag="7" Click="Button_Click" />
+            <Button x:Name="button8" Grid.Row="2" Grid.Column="0" Content="Button" FontSize="50" Background="LightGray" Margin="4" Tag="8" Click="Button_Click" />
+            <Button x:Name="button9" Grid.Row="2" Grid.Column="1" Content="Button" FontSize="50" Background="LightGray" Margin="4" Tag="9" Click="Button_Click" />
+            <Button x:Name="button10" Grid.Row="2" Grid.Column="2" Content="Button" FontSize="50" Background="LightGray" Margin="4" Tag="10" Click="Button_Click" />
+            <Button x:Name="button11" Grid.Row="2" Grid.Column="3" Content="Button" FontSize="50" Background="LightGray" Margin="4" Tag="11" Click="Button_Click" />
+            <Button x:Name="button12" Grid.Row="3" Grid.Column="0" Content="Button" FontSize="50" Background="LightGray" Margin="4" Tag="12" Click="Button_Click" />
+            <Button x:Name="button13" Grid.Row="3" Grid.Column="1" Content="Button" FontSize="50" Background="LightGray" Margin="4" Tag="13" Click="Button_Click" />
+            <Button x:Name="button14" Grid.Row="3" Grid.Column="2" Content="Button" FontSize="50" Background="LightGray" Margin="4" Tag="14" Click="Button_Click" />
+            <Button x:Name="button15" Grid.Row="3" Grid.Column="3" Content="Button" FontSize="50" Background="LightGray" Margin="4" Tag="15" Click="Button_Click" />
+        </Grid>
+    </DockPanel>
+</Window>

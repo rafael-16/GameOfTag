@@ -1,0 +1,47 @@
+﻿<Window x:Class="GameOfTag.MenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameOfTag"
+        mc:Ignorable="d"
+        Title="Пятнашки" Height="450" Width="400" WindowStartupLocation="CenterScreen">
+    <Grid Background="#66825B">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="160" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0"
+                CornerRadius="15"
+                Background="#FFF9E7BD"
+                Padding="1"
+                BorderThickness="2"
+                BorderBrush="#2B2C7C"
+                Margin="20">
+            <TextBlock Text="Пятнашки"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontSize="40"
+                       FontFamily="Segoe Script"
+                       Foreground="#FF1618AB" />
+        </Border>
+        <Button Grid.Row="1"
+                Content="Игра"
+                Background="#FF9AEBA8"
+                FontSize="40"
+                FontFamily="Segoe Script"
+                Margin="60,20"
+                Foreground="#FF744506"
+                Click="Play_Button" />
+
+        <Button Grid.Row="2"
+                Content="Отмена"
+                Background="#FF9AEBA8"
+                FontFamily="Segoe Script"
+                FontSize="40"
+                Margin="60,20"
+                Foreground="#FF744506"
+                Click="Exit_Button" />
+    </Grid>
+</Window>
